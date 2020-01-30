@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server/index.js",
+    "dev": "nodemon",
     "build": "next build",
-    "start": "node server/index.js"
+    "start": "node server/index.js next start -p $PORT",
+    "postinstall": "next build"
   },
   "dependencies": {
     "@babel/node": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
+    "@material-ui/core": "^4.9.0",
     "express": "^4.17.1",
     "next": "9.2.1",
     "react": "16.12.0",
