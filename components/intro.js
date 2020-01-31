@@ -10,7 +10,7 @@ import {
   MDBAnimation
 } from "mdbreact";
 
-
+import robot from "../public/images/pic.JPG"; 
 class Intro extends React.Component {
   render() {
     const overlay = (
@@ -23,8 +23,8 @@ class Intro extends React.Component {
 
     return (
       <div id="apppage">
-        <MDBMask className="d-flex justify-content-center align-items-center w-100" >
-          <MDBContainer className='w-100'>
+        <MDBMask className="d-flex justify-content-center align-items-center success-color-dark">
+          <MDBContainer className="w-100">
             <MDBRow>
               <MDBCol
                 md="6"
@@ -32,7 +32,7 @@ class Intro extends React.Component {
               >
                 <MDBAnimation type="fadeInLeft" delay=".3s">
                   <h1 className="h1-responsive font-weight-bold mt-sm-5">
-                    Make purchases with our app
+                    Pella Bionic Dutch
                   </h1>
                   <hr className="hr-light" />
                   <h6 className="mb-4">
@@ -41,9 +41,9 @@ class Intro extends React.Component {
                     veniam sapiente, fugiat! Commodi sequi non animi ea dolor
                     molestiae iste.
                   </h6>
-                  <MDBBtn color="white">Download</MDBBtn>
+                  <MDBBtn color="white">About Us</MDBBtn>
                   <MDBBtn outline color="white">
-                    Learn More
+                    Sponsors
                   </MDBBtn>
                 </MDBAnimation>
               </MDBCol>
@@ -51,7 +51,7 @@ class Intro extends React.Component {
               <MDBCol md="6" xl="5" className="mt-xl-5">
                 <MDBAnimation type="fadeInRight" delay=".3s">
                   <img
-                    src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png"
+                    src={robot}
                     alt=""
                     className="img-fluid"
                   />

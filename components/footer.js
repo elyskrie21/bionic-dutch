@@ -1,31 +1,44 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-import Link from "@material-ui/core/Link";
-import "../css/footer.css"
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-function Copyright() {
+const Footer = () => {
   return (
-    <Typography variant="body2" color="textSecondary">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
+    <MDBFooter color="elegant-color-dark" className="font-small pt-4 mt-4">
+      <MDBContainer fluid className="text-center text-md-left">
+        <MDBRow>
+          <MDBCol md="6">
+            <h5 className="title">Footer Content</h5>
+            <p>
+              Here you can use rows and columns here to organize your footer
+              content.
+            </p>
+          </MDBCol>
+          <MDBCol md="6">
+            <h5 className="title">Links</h5>
+            <ul>
+              <li className="list-unstyled">
+                <a href="#!">Link 1</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 2</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 3</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+        </MDBContainer>
+      </div>
+    </MDBFooter>
   );
 }
 
-export default function Footer() {
-  return (
-      <footer>
-        <Container maxWidth="sm">
-          <Typography variant="body1">
-            My sticky footer can be found here.
-          </Typography>
-          <Copyright />
-        </Container>
-      </footer>
-  );
-}
+export default Footer;
