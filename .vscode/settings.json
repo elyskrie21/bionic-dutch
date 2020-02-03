@@ -3,6 +3,6 @@
         "node_modules{,/**}",
         ".vscode{,/**}"
     ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/9a296309-1934-4f10-b94b-c7ccca87f493/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/bionic-dutch",
-    "appService.deploySubpath": ""
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/9a296309-1934-4f10-b94b-c7ccca87f493/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/pellabionicdutch"
 }

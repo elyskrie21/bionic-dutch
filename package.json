@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "next build",
-    "start": "node server/index.js next start -p $PORT",
+    "start": "node server/index.js -p $PORT",
     "postinstall": "next build"
   },
   "dependencies": {
