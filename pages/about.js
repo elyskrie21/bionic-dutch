@@ -8,7 +8,7 @@ import {
   MDBContainer,
   MDBFormInline
 } from "mdbreact";
-import "../css/index.css";
+// import "../css/index.css";
 
 function About () {
     return (
