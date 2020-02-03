@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><meta name="next-head-count" content="2"><link rel="preload" href="./localhost_files/styles.chunk.css" as="style"><link rel="stylesheet" href="./localhost_files/styles.chunk.css"><link rel="preload" href="./localhost_files/index.js" as="script"><link rel="preload" href="./localhost_files/_app.js" as="script"><link rel="preload" href="./localhost_files/webpack.js" as="script"><link rel="preload" href="./localhost_files/main.js" as="script"><link rel="preload" href="./localhost_files/styles.js" as="script"><noscript id="__next_css__DO_NOT_USE__"></noscript><script charset="utf-8" src="./localhost_files/0.js"></script><style type="text/css">.bc-icons.breadcrumb-item::before,
+.bc-icons.breadcrumb-item::after {
+  content: none;
+}
+
+.bc-icons.breadcrumb-item + .active.breadcrumb-item::before,
+.bc-icons.breadcrumb-item + .active.breadcrumb-item::after{
+  content: none;
+}
+
+.bc-icons.breadcrumb-item.active {
+  color: #eeeeee;
+}
+</style><style type="text/css">.btn-group-vertical>.btn,
+.btn-group-vertical>.btn+.btn-group,
+.btn-group-vertical>.btn-group+.btn,
+.btn-group-vertical>.btn-group+.btn-group {
+  margin-left: 0px;
+}
+
+.btn-group-lg>.btn {
+  font-size: 0.9rem;
+  padding: 1rem 2.4rem;
+}
+
+.btn-group-sm>.btn {
+  font-size: 0.6rem;
+  padding: 0.5rem 1.6rem;
+}
+
+.btn-floating.btn.btn-sm,
+.btn-floating.btn.btn-lg {
+  padding: 0;
+}
+</style><style type="text/css">.Ripple {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+}
+
+.Ripple-outline {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.Ripple.is-reppling {
+  animation: ripple 0.5s linear;
+}
+
+.Ripple-parent {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+</style><style type="text/css">.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-fade .carousel-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block !important;
+  opacity: 0;
+  z-index: 0;
+  transition: transform 0ms ease-in-out, opacity 0.8s ease-out;
+}
+
+.carousel-fade .carousel-item.active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+
+.carousel-multi-item .carousel-item {
+  display: inline-block !important;
+}
+
+.carousel .carousel-slide-item {
+  transition: left 0.5s;
+}
+
+.carousel-control-prev, .carousel-control-next, .carousel-item-prev, .carousel-item-next {
+  z-index: 2;
+}
+</style><style type="text/css">.table-wrapper-scroll-y {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+</style><style type="text/css">.dropup .dropdown-menu {
+  top: auto !important;
+  bottom: 100% !important;
+  transform: translate3d(5px, 5px, 0px) !important;
+}
+
+.dropdown-menu-right {
+  left: 0 !important;
+  right: auto !important;
+}
+</style><style type="text/css">.mdb-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+}
+</style><style type="text/css">.mdb-gallery-element {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.mdb-gallery-title {
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-full-height {
+  height: 100%;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+
+.img-full-width {
+  width: 100%;
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+</style><style type="text/css">.hamburger-button__checkbox {
+  display: none;
+}
+
+.hamburger-button__button {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  top: -5px;
+}
+
+label.hamburger-button__button {
+  margin-bottom: 0;
+}
+
+#nav-icon1 {
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 1px;
+  background-color: #fff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 5px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 16px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 27px;
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(1) {
+  top: 16px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(3) {
+  top: 16px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+</style><style type="text/css">.overflow-y-scroll {
+  overflow-y: scroll !important;
+}
+</style><style type="text/css">.popover {
+  width: auto;
+  background-color: white;
+  color: #97999b;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  font-size: 0.83em;
+  font-weight: normal;
+  border: 1px rgb(0, 0, 0) solid;
+  /* z-index: 200000; */
+  z-index: 10;
+  /* max-width: initial; */
+  max-width: 274px;
+  text-align: start;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  visibility: hidden;
+}
+
+.show.popover {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.popover-body {
+  color: #6c6e71;
+}
+
+.popover .popover_arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 6px;
+  color: transparent;
+}
+
+.popover[x-placement^="top"] {
+  margin-bottom: 15px;
+}
+
+.popover[x-placement^="top"] .popover_arrow {
+  border-width: 8px 8px 0 8px;
+  border-color: #d6d6d6 transparent transparent transparent;
+  bottom: -8px;
+  margin-bottom: 0;
+}
+
+.popover[x-placement^="top"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+  bottom: 1.5px;
+  border: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: white transparent transparent transparent;
+}
+
+.popover[x-placement^="bottom"] {
+  margin-top: 15px;
+}
+
+.popover[x-placement^="bottom"] .popover_arrow {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #d6d6d6 transparent;
+  top: -8px;
+  margin-top: 0;
+}
+
+.popover[x-placement^="bottom"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+  top: 1.45px;
+  border: solid;
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent white transparent;
+}
+
+.popover[x-placement^="right"] {
+  margin-left: 15px;
+}
+
+.popover[x-placement^="right"] .popover_arrow {
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #d6d6d6 transparent transparent;
+  left: -8px;
+  margin-left: 0;
+}
+
+.popover[x-placement^="right"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  left: 1.45px;
+  border: solid;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.popover[x-placement^="left"] {
+  margin-right: 15px;
+}
+
+.popover[x-placement^="left"] .popover_arrow {
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #d6d6d6;
+  right: -8px;
+  margin-right: 0;
+}
+
+.popover[x-placement^="left"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  right: 1.45px;
+  border: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.tooltip {
+  width: auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  /* font-size: 0.83em; */
+  font-weight: normal;
+  border: 1px rgb(0, 0, 0) solid;
+  /* z-index: 200000; */
+  z-index: 15;
+  /* max-width: initial; */
+  max-width: 274px;
+  text-align: start;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  visibility: hidden;
+}
+
+.tooltip-inner {
+  display: block;
+}
+
+.show.tooltip {
+  z-index: 999;
+
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip .popover_arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 6px;
+  color: transparent;
+}
+
+.tooltip[x-placement^="top"],
+.show[x-placement^="top"]:not(.tooltip) {
+  margin-bottom: 5px;
+}
+
+.tooltip[x-placement^="top"] .popover_arrow {
+  border-width: 6px 6px 0 6px;
+  border-color: #131313 transparent transparent transparent;
+  bottom: -6px;
+  margin-bottom: 0;
+}
+
+.tooltip[x-placement^="top"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -6px;
+  bottom: 1.5px;
+  border: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip[x-placement^="bottom"],
+.show[x-placement^="bottom"]:not(.tooltip) {
+  margin-top: 5px;
+}
+
+.tooltip[x-placement^="bottom"] .popover_arrow {
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #131313 transparent;
+  top: -6px;
+  margin-top: 0;
+}
+
+.tooltip[x-placement^="bottom"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -6px;
+  top: 1.45px;
+  border: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip[x-placement^="right"],
+.show[x-placement^="right"]:not(.tooltip) {
+  margin-left: 5px;
+}
+
+.tooltip[x-placement^="right"] .popover_arrow {
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #131313 transparent transparent;
+  left: -6px;
+  margin-left: 0;
+}
+
+.tooltip[x-placement^="right"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 1.45px;
+  border: solid;
+  border-width: 6px 6px 6px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip[x-placement^="left"],
+.show[x-placement^="left"]:not(.tooltip) {
+  margin-right: 5px;
+}
+
+.tooltip[x-placement^="left"] .popover_arrow {
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent #131313;
+  right: -6px;
+  margin-right: 0;
+}
+
+.tooltip[x-placement^="left"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 1.45px;
+  border: solid;
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent black;
+}
+</style><style type="text/css">.note-dark {
+  background-color: #000;
+  color: #fff;
+  border-color: #58595a;
+}
+
+.note-default {
+  background-color: rgb(164, 243, 235);
+  border-color: #00695c;
+}
+
+.note-elegant {
+  background-color: #2E2E2E;
+  border-color: #212121;
+  color: #fff;
+}
+
+.note-stylish {
+  background-color: #4B515D;
+  border-color: #3E4551;
+  color: #fff;
+}
+
+.note-unique {
+  background-color: #3F729B;
+  border-color: #1C2331;
+  color: #fff;
+}
+
+.note-special {
+  background-color: #37474F;
+  border-color: #263238;
+  color: #fff;
+}
+</style><script charset="utf-8" src="./localhost_files/index.js.fdbf389fa6ee9dc17011.hot-update.js"></script><script charset="utf-8" src="./localhost_files/index.js.95fcfd6672a231945786.hot-update.js"></script><script charset="utf-8" src="./localhost_files/index.js.473f76e94b1fe1b2e6c6.hot-update.js"></script></head><body data-gr-c-s-loaded="true"><div id="__next"><div><div><nav data-test="navbar" class="navbar-dark navbar navbar-expand-md success-color-dark mw-100 sticky-top" role="navigation"><div data-test="navbar-brand" class="navbar-brand"><strong class="white-text">Navbar</strong></div><button data-test="navbar-toggler" type="button" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button><div data-test="collapse" id="navbarCollapse3" class="collapse navbar-collapse"><ul data-test="navbar-nav" class="navbar-nav mr-auto"><li data-test="nav-item" class="nav-item active"><a class="nav-link" href="http://localhost:3000/">Home</a></li><li data-test="nav-item" class="nav-item"><a class="nav-link" href="http://localhost:3000/">About</a></li><li data-test="nav-item" class="nav-item"><a class="nav-link" href="http://localhost:3000/">Sponsors</a></li><li data-test="nav-item" class="nav-item"><a class="nav-link" href="http://localhost:3000/">Store</a></li></ul><ul data-test="navbar-nav" class="navbar-nav ml-auto"><li data-test="nav-item" class="nav-item"><a class="nav-link waves-effect waves-light" href="http://localhost:3000/">Sign In </a></li><li data-test="nav-item" class="nav-item"><a class="nav-link waves-effect waves-light" href="http://localhost:3000/">Sign Up</a></li></ul></div></nav><div><div id="apppage"><div data-test="mask" class="mask d-flex justify-content-center align-items-center success-color-dark"><div data-test="container" class="container w-100"><div data-test="row" class="row text-center"><div data-test="col" class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5"><div data-test="animation" class="animated fadeInLeft" style="animation-name: fadeInLeft; visibility: visible; animation-delay: 0.3s; animation-iteration-count: 1;"><h1 class="h1-responsive font-weight-bold mt-sm-5 w-75">Pella Bionic Dutch</h1><hr class="hr-light"><h3>Gracious Professionalism</h3><h6 class="mb-4">We are striving to reach our full potential and give 100% on everything we do. We are a very motivated team and we show gracious professionalism during tournaments and in our practices.</h6><button data-test="button" type="button" class="btn-white btn Ripple-parent">About Us<div data-test="waves" class="Ripple " style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></button><button data-test="button" type="button" class="btn-white btn-outline-white btn Ripple-parent">Sponsors<div data-test="waves" class="Ripple Ripple-outline " style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></button></div></div><div data-test="col" class="col-md-6 col-xl-5 mt-xl-5"><div data-test="animation" class="animated fadeInRight" style="animation-name: fadeInRight; visibility: visible; animation-delay: 0.3s; animation-iteration-count: 1;"><img src="./localhost_files/pic-74a91fd356d675420b2cd1bdf6a10570.jpg" alt="" class="img-fluid"></div></div></div></div></div></div><div data-test="container" class="container"><h2 class="h2-responsive font-weight-bold text-center my-5">Meet The Team</h2><div data-test="carousel" length="12" class="carousel carousel-fade z-depth-1" aria-label="carousel"><div data-test="carousel-inner" class="carousel-inner"><div data-test="carousel-item" class="carousel-item carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/croppedjoe-501d1c7ada6c5fe3dbddc912148fff15.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h2 class="h3-responsive font-weight-bold">Joe Beukelman</h2><p>Random texrt</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/croppedjeremiah-553ac5f60275ad050e7f63ba7922d3dc.jpg" alt="Second slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Jeremiah Kriegel</h3><p>Second text</p></div></div><div data-test="carousel-item" class="carousel-item active" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/hunter-ed552585c08d9ccc500fa6f11caf3872.jpg" alt="Third slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Hunter</h3><p>Third text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/lucas-78b34417868f74d10a8fbeed5b2c8475.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Lucas</h3><p>First text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/ben-bbd7837608c8293da45be8e9d15aab0e.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Ben</h3><p>First text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/trevor-f410534985da5ec647d2f58682d1c545.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Trevor</h3><p>First text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/logan-7dd82d8fc19cc8c7a18873b09c9458e7.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Logan</h3><p>First text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/ryder-64253194caf0b490697c69853f9cc856.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Ryder</h3><p>First text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/grant-7f1a75887eb0d3615a14191deb52a747.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Grant</h3><p>First text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/alex-0a7661b3c9f0f7288c61e8ba0cefe43d.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Alex</h3><p>First text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/scott-5060e59afa4dc6b353c2da80638c6a0a.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Scoot</h3><p>First text</p></div></div><div data-test="carousel-item" class="carousel-item" style="left: 0px;"><div class="view" data-test="view"><img class="d-block w-100" src="./localhost_files/chalyne-d18ba1ee945e2a5d9a169e8e2d5b176c.jpg" alt="First slide"><div data-test="mask" class="mask rgba-black-light"></div></div><div data-test="carousel-caption" class="carousel-caption"><h3 class="h3-responsive">Chalyne</h3><p>First text</p></div></div></div><a data-test="carousel-control" class="carousel-control-prev" data-slide="prev"><div><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></div></a><a data-test="carousel-control" class="carousel-control-next" data-slide="next"><div><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></div></a><ol data-test="carousel-indicators" class="carousel-indicators"><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class="active"></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li><li data-test="carousel-indicator" class=""></li></ol></div><hr class="my-5 hr-dark"></div><div data-test="container" class="container"><section class="my-5"><h2 class="h2-responsive font-weight-bold text-center my-5">Team Statements</h2><p class="w-responsive text-center mx-auto mb-5">We are striving to reach our full potential and give 100% on everything we do. We are expecting to have gracious professionalism during tournaments and in our practices.</p><div data-test="row" class="row"><div data-test="col" class="col-lg-5 mb-lg-0 mb-5"><img src="./localhost_files/statement-pic-229b67ce40561385985a2e7b0b67b3c2.jpg" alt="" class="img-fluid rounded z-depth-2"></div><div data-test="col" class="col-lg-7"><div data-test="row" class="row mb-3"><div data-test="col" class="col-2 col-md-1"><i data-test="fa" class="far fa-chart-bar fa-2x indigo-text"></i></div><div data-test="col" class="col-10 col-md-11"><h5 class="font-weight-bold mb-3">Goals</h5><ul><li>Team and relationship building</li><li>To gain knowledge in robotics and engineering design principles</li><li>To apply our skills in many real life problems</li><li>To have fun!</li></ul></div></div><div data-test="row" class="row mb-3"><div data-test="col" class="col-2 col-md-1"><i data-test="fa" class="fa fa-bullseye fa-2x red-text"></i></div><div data-test="col" class="col-10 col-md-11"><h5 class="font-weight-bold mb-3">Mission</h5><p>Our team mission is to improve our knowledge and team building skills in order to apply our problem solving skills to design an engineered product.</p></div></div><div data-test="row" class="row mb-3"><div data-test="col" class="col-2 col-md-1"><i data-test="fa" class="fa fa-book fa-2x"></i></div><div data-test="col" class="col-10 col-md-11"><h5 class="font-weight-bold mb-3">Pella Community School</h5><p>Pursuing excellence, building caring relationships, and respecting and developing every child's potential.</p></div></div></div></div><a target="_blank" href="https://www.firstinspires.org/robotics/ftc"><button data-test="button" type="button" class="btn-success btn-outline-success btn Ripple-parent d-block mx-auto mt-2">Learn more about First Tech Challenge<div data-test="waves" class="Ripple Ripple-outline " style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></button></a><hr class="my-5 hr-dark"></section></div><div data-test="container" class="container"><h2 class="h2-responsive font-weight-bold text-center my-5">Top Sponsors</h2><div data-test="row" class="row"><div data-test="col" class="col"><div data-test="card" class="card-cascade wider card sponsor-card z-depth-3"><div class="view view-cascade" data-test="view"><div class="Ripple-parent" style="touch-action: unset;"><img data-test="card-image" src="./localhost_files/vermeer-6da40f8b9cfa764c0331b285fb08a440.jpg" class="img-fluid"><div data-test="mask" class="mask rgba-white-slight"></div><div data-test="waves" class="Ripple " style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></div></div><div data-test="card-body" class="card-body card-body-cascade text-center m-2 success-color-dark w-100 p-0 m-0"><h4 data-test="card-title" class="card-title h3-responsive font-weight-bold white-text">Vermeer Corporation</h4><p data-test="card-text" class="card-text white-text">"Equiped to do more"</p><a target="_blank" href="https://www.firstinspires.org/robotics/ftc"><button data-test="button" type="button" class="btn-white btn-outline-white btn Ripple-parent d-block mx-auto mt-2">Learn more about Vermeer<div data-test="waves" class="Ripple Ripple-outline " style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></button></a></div></div></div><div data-test="col" class="col"><div data-test="card" class="card-cascade wider card sponsor-card z-depth-3"><div class="view view-cascade" data-test="view"><div class="Ripple-parent" style="touch-action: unset;"><img data-test="card-image" src="./localhost_files/pella-12bc4b28cba0d78ec7ce1be66526b570.png" class="img-fluid"><div data-test="mask" class="mask rgba-white-slight"></div><div data-test="waves" class="Ripple " style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></div></div><div data-test="card-body" class="card-body card-body-cascade text-center m-2 success-color-dark w-100 p-0"><h4 data-test="card-title" class="card-title h3-responsive font-weight-bold white-text">Pella Corporation</h4><p data-test="card-text" class="card-text white-text">"Perfectly Beautiful"</p><a target="_blank" href="https://www.firstinspires.org/robotics/ftc"><button data-test="button" type="button" class="btn-white btn-outline-white btn Ripple-parent d-block mx-auto mt-2">Learn more about First Tech Challenge<div data-test="waves" class="Ripple Ripple-outline " style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></button></a></div></div></div></div><hr class="my-5 hr-dark"></div><section class="contact-section my-5"><div data-test="container" class="container"><div data-test="card" class="card"><div data-test="row" class="row"><div data-test="col" class="col-lg-8"><div data-test="card-body" class="card-body form"><h3 class="mt-4"><i data-test="fa" class="fa fa-envelope pr-2"></i>Write to us:</h3><form><div data-test="row" class="row"><div data-test="col" class="col-md-6"><div class="md-form mb-0"><div class="md-form"><input data-test="input" type="text" class="form-control" id="form-contact-name" value=""><label class="" for="form-contact-name" data-error="" data-success="" id="">Your name</label></div></div></div><div data-test="col" class="col-md-6"><div class="md-form mb-0"><div class="md-form"><input data-test="input" type="text" class="form-control" id="form-contact-email" value=""><label class="" for="form-contact-email" data-error="" data-success="" id="">Your email</label></div></div></div></div><div data-test="row" class="row"><div data-test="col" class="col-md-6"><div class="md-form mb-0"><div class="md-form"><input data-test="input" type="text" class="form-control" id="form-contact-phone" value=""><label class="" for="form-contact-phone" data-error="" data-success="" id="">Your phone</label></div></div></div><div data-test="col" class="col-md-6"><div class="md-form mb-0"><div class="md-form"><input data-test="input" type="text" class="form-control" id="form-contact-company" value=""><label class="" for="form-contact-company" data-error="" data-success="" id="">Your company</label></div></div></div></div><div data-test="row" class="row"><div data-test="col" class="col-md-12"><div class="md-form mb-0"><div class="md-form"><textarea data-test="input" class="md-textarea form-control" id="form-contact-message"></textarea><label class="" for="form-contact-message" data-error="" data-success="" id="">Your message</label></div><button data-test="button" type="button" class="btn-blue btn Ripple-parent"><i data-test="fa" class="fa fa-paper-plane"></i><div data-test="waves" class="Ripple Ripple-outline " style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></button></div></div></div></form></div></div><div data-test="col" class="col-lg-4"><div data-test="card-body" class="card-body contact text-center h-100 white-text"><h3 class="my-4 pb-2">Contact information</h3><ul class="text-lg-left list-unstyled ml-4"><li><p><i data-test="fa" class="fa fa-map-marker-alt pr-2"></i>New York, 94126 USA</p></li><li><p><i data-test="fa" class="fa fa-phone pr-2"></i>+ 01 234 567 89</p></li><li><p><i data-test="fa" class="fa fa-envelope pr-2"></i>contact@example.com</p></li></ul><hr class="hr-light my-4"><ul class="list-inline text-center list-unstyled"><li class="list-inline-item"><a href="http://localhost:3000/#!" class="p-2 fa-lg w-ic"><i data-test="fa" class="fab fa-twitter"></i></a></li><li class="list-inline-item"><a href="http://localhost:3000/#!" class="p-2 fa-lg w-ic"><i data-test="fa" class="fab fa-linkedin-in"></i></a></li><li class="list-inline-item"><a href="http://localhost:3000/#!" class="p-2 fa-lg w-ic"><i data-test="fa" class="fab fa-instagram"></i></a></li></ul></div></div></div></div></div></section></div><footer data-test="footer" class="page-footer elegant-color-dark font-small pt-4 mt-4"><div data-test="container" class="container-fluid text-center text-md-left"><div data-test="row" class="row"><div data-test="col" class="col-md-6"><h5 class="title">Footer Content</h5><p>Here you can use rows and columns here to organize your footer content.</p></div></div></div><div class="footer-copyright text-center py-3"><div data-test="container" class="container-fluid">© 2020 Copyright: <a href="https://www.mdbootstrap.com/"> MDBootstrap.com </a></div></div></footer></div></div></div><script src="./localhost_files/dll_d6a88dbe3071bd165157.js"></script><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"development","nextExport":true,"autoExport":true}</script><script nomodule="" src="./localhost_files/polyfills.js"></script><script async="" data-next-page="/" src="./localhost_files/index.js"></script><script async="" data-next-page="/_app" src="./localhost_files/_app.js"></script><script src="./localhost_files/webpack.js" async=""></script><script src="./localhost_files/main.js" async=""></script><script src="./localhost_files/styles.js" async=""></script><script src="./localhost_files/_buildManifest.js" async=""></script><div id="__next-build-watcher" style="position: fixed; bottom: 10px; right: 20px; width: 0px; height: 0px; z-index: 99999;"></div><div id="__next-prerender-indicator" style="position: fixed; bottom: 20px; right: 10px; width: 0px; height: 0px; z-index: 99998; transition: all 100ms ease 0s;"></div></body></html>

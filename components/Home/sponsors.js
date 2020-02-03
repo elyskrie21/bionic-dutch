@@ -10,6 +10,8 @@ import {
   MDBCol,
   MDBContainer
 } from "mdbreact";
+import Link from "next/link";
+import "../css/team.css";
 
 function Sponsors() {
   return (
@@ -19,38 +21,61 @@ function Sponsors() {
       </h2>
       <MDBRow>
         <MDBCol>
-          <MDBCard wide>
+          <MDBCard wide className="sponsor-card z-depth-2">
             <MDBCardImage
               cascade
-              className="img-fluid"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg"
+              className="img-fluid my-5"
+              src={require("../images/sponsors/vermeer.jpg")}
             />
-            <MDBCardBody cascade className="text-center m-2">
-              <MDBCardTitle>MDBCard title</MDBCardTitle>
-              <MDBCardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+            <MDBCardBody
+              cascade
+              className="text-center m-2 success-color-dark w-100"
+            >
+              <MDBCardTitle className="h3-responsive font-weight-bold white-text">
+                Vermeer Corporation
+              </MDBCardTitle>
+              <MDBCardText className="white-text">
+                "Equipped to do more"
               </MDBCardText>
-              <MDBBtn href="https://google.com" target="_Blank">
-                MDBBtn
-              </MDBBtn>
+              <Link href="https://www.vermeer.com/NA/en/N/about_us">
+                <a target="_blank">
+                  <MDBBtn
+                    outline
+                    color="white"
+                    className="d-block mx-auto mt-2"
+                  >
+                    Learn more about Vermeer
+                  </MDBBtn>
+                </a>
+              </Link>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
         <MDBCol>
-          <MDBCard narrow>
+          <MDBCard wide className="sponsor-card z-depth-2">
             <MDBCardImage
               cascade
-              className="img-fluid"
-              src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+              className="img-fluid my-5"
+              src={require("../images/sponsors/pella.png")}
             />
-            <MDBCardBody cascade className="text-center m-2">
-              <MDBCardTitle>MDBCard title</MDBCardTitle>
-              <MDBCardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+            <MDBCardBody cascade className="text-center m-2 success-color-dark w-100 ">
+              <MDBCardTitle className="h3-responsive font-weight-bold white-text">
+                Pella Corporation
+              </MDBCardTitle>
+              <MDBCardText className="white-text">
+                "Perfectly Beautiful"
               </MDBCardText>
-              <MDBBtn href="#">MDBBtn</MDBBtn>
+              <Link href="https://professional.pella.com/about/about-pella-corporation">
+                <a target="_blank">
+                  <MDBBtn
+                    outline
+                    color="white"
+                    className="d-block mx-auto mt-2"
+                  >
+                    Learn more about Pella
+                  </MDBBtn>
+                </a>
+              </Link>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>

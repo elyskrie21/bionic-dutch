@@ -2,3 +2,13 @@
   max-height: 40rem;
   overflow: hidden;
 }
+
+.sponsor-card {
+  height: fit-content;
+  align-items: center;
+}
+
+.sponsor-card img {
+  width: auto;
+  height: 27rem;
+}
