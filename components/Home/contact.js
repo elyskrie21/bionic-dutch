@@ -10,7 +10,15 @@ import {
   MDBContainer
 } from "mdbreact";
 
+import {useForm} from "react-hook-form";
+
 const ContactPage = () => {
+  const { register, handleSubmit, errors } = useForm();
+
+  const onSubmit = data => {
+    console.log(data);
+  };
+
   return (
     <section className="contact-section my-5">
       <MDBContainer>
@@ -22,7 +30,7 @@ const ContactPage = () => {
                   <MDBIcon icon="envelope" className="pr-2" />
                   Write to us:
                 </h3>
-                <form>
+                <form onSubmit={handleSubmit(onSubmit)}>
                   <MDBRow>
                     <MDBCol md="6">
                       <div className="md-form mb-0">
@@ -30,6 +38,8 @@ const ContactPage = () => {
                           type="text"
                           id="form-contact-name"
                           label="Your name"
+                          name="name"
+                          ref={register}
                         />
                       </div>
                     </MDBCol>
@@ -39,6 +49,8 @@ const ContactPage = () => {
                           type="text"
                           id="form-contact-email"
                           label="Your email"
+                          name="email"
+                          ref={register}
                         />
                       </div>
                     </MDBCol>
@@ -50,6 +62,8 @@ const ContactPage = () => {
                           type="text"
                           id="form-contact-phone"
                           label="Your phone"
+                          name="phone"
+                          ref={register}
                         />
                       </div>
                     </MDBCol>
@@ -59,6 +73,8 @@ const ContactPage = () => {
                           type="text"
                           id="form-contact-company"
                           label="Your company"
+                          name="company"
+                          ref={register}
                         />
                       </div>
                     </MDBCol>
@@ -70,8 +86,10 @@ const ContactPage = () => {
                           type="textarea"
                           id="form-contact-message"
                           label="Your message"
+                          name="message"
+                          ref={register}
                         />
-                        <MDBBtn rounded color="blue">
+                        <MDBBtn rounded color="blue" type="submit">
                           <MDBIcon icon="paper-plane" />
                         </MDBBtn>
                       </div>
@@ -81,24 +99,24 @@ const ContactPage = () => {
               </MDBCardBody>
             </MDBCol>
             <MDBCol lg="4">
-              <MDBCardBody className="contact text-center h-100 white-text">
+              <MDBCardBody className="contact text-center h-100 black-text">
                 <h3 className="my-4 pb-2">Contact information</h3>
                 <ul className="text-lg-left list-unstyled ml-4">
                   <li>
                     <p>
                       <MDBIcon icon="map-marker-alt" className="pr-2" />
-                      New York, 94126 USA
+                      212 E University St, Pella, IA 50219
                     </p>
                   </li>
                   <li>
                     <p>
-                      <MDBIcon icon="phone" className="pr-2" />+ 01 234 567 89
+                      <MDBIcon icon="phone" className="pr-2" /> (641) 628-3870
                     </p>
                   </li>
                   <li>
                     <p>
                       <MDBIcon icon="envelope" className="pr-2" />
-                      contact@example.com
+                      bionicdutch@gmail.com
                     </p>
                   </li>
                 </ul>
@@ -106,17 +124,7 @@ const ContactPage = () => {
                 <ul className="list-inline text-center list-unstyled">
                   <li className="list-inline-item">
                     <a href="#!" className="p-2 fa-lg w-ic">
-                      <MDBIcon fab icon="twitter" />
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#!" className="p-2 fa-lg w-ic">
-                      <MDBIcon fab icon="linkedin-in" />
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#!" className="p-2 fa-lg w-ic">
-                      <MDBIcon fab icon="instagram" />
+                      <MDBIcon fab icon="facebook" />
                     </a>
                   </li>
                 </ul>
