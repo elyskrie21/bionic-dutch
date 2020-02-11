@@ -1,7 +1,9 @@
 import React from "react";
-import useFormal from "@kevinwolf/formal-web";
 import * as yup from "yup";
+import useFormal from "@kevinwolf/formal";
 
+import {MDBContainer} from "mdbreact"; 
+ 
 const schema = yup.object().shape({
   firstName: yup.string().required(),
   lastName: yup.string().required(),
@@ -10,42 +12,65 @@ const schema = yup.object().shape({
     .email()
     .required()
 });
-
+ 
 const initialValues = {
-  firstName: "Tony",
-  lastName: "Stark",
-  email: "ironman@avengers.io"
+  firstName: " ",
+  lastName: " ",
+  email: " "
 };
-
+ 
 export default function ContactPage() {
   const formal = useFormal(initialValues, {
     schema,
     onSubmit: values => console.log("Your values are:", values)
   });
-
+ 
+  const handleSubmit = e => {
+    e.preventDefault();
+    formal.submit();
+  };
+ 
   return (
-    <form {...formal.getFormProps()}>
+      <MDBContainer>
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="firstName">First Name</label>
-        <input {...formal.getFieldProps("firstName")} type="text" />
-        {form.errors.firstName && <div>{form.errors.firstName}</div>}
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          value={formal.values.firstName}
+          onChange={e => formal.change("firstName", e.target.value)}
+        />
+        {formal.errors.firstName && <div>{formal.errors.firstName}</div>}
       </div>
-
+ 
       <div>
         <label htmlFor="lastName">Last Name</label>
-        <input {...formal.getFieldProps("lastName")} type="text" />
-        {form.errors.lastName && <div>{form.errors.lastName}</div>}
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          value={formal.values.lastName}
+          onChange={e => formal.change("lastName", e.target.value)}
+        />
+        {formal.errors.lastName && <div>{formal.errors.lastName}</div>}
       </div>
-
+ 
       <div>
         <label htmlFor="email">Email</label>
-        <input {...formal.getFieldProps("email")} type="text" />
-        {form.errors.email && <div>{form.errors.email}</div>}
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value={formal.values.email}
+          onChange={e => formal.change("email", e.target.value)}
+        />
+        {formal.errors.email && <div>{formal.errors.email}</div>}
       </div>
-
-      <button {...formal.getSubmitButtonProps()} type="submit">
-        Submit
-      </button>
+ 
+      <button type="submit">Submit</button>
     </form>
+    </MDBContainer>
   );
 }
