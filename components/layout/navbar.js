@@ -21,9 +21,9 @@ class NavbarPage extends Component {
 
   render() {
     return (
-      <MDBNavbar dark expand="md" className="success-color-dark mw-100 sticky-top">
+      <MDBNavbar dark expand="md" className="elegant-color-dark mw-100 sticky-top">
         <MDBNavbarBrand>
-          <strong className="white-text">Navbar</strong>
+          <strong className="white-text">Pella Bionic Dutch</strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -31,11 +31,6 @@ class NavbarPage extends Component {
             <MDBNavItem active>
               <Link href="/">
                 <a className="nav-link">Home</a>
-              </Link>
-            </MDBNavItem>
-            <MDBNavItem>
-              <Link href="/">
-                <a className="nav-link">About</a>
               </Link>
             </MDBNavItem>
             <MDBNavItem>

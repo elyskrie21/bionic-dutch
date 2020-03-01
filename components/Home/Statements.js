@@ -29,7 +29,7 @@ const Statements = () => {
         <MDBRow>
           <MDBCol lg="5" className="mb-lg-0 mb-5">
             <img
-              src={require("../images/individual-photos/statement-pic.jpg")}
+              src="https://i.imgur.com/MteoS2A.jpg"
               alt=""
               className="img-fluid rounded z-depth-2"
             />

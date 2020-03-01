@@ -9,7 +9,7 @@ import {
   MDBContainer
 } from "mdbreact";
 
-import "../css/team.css";
+import "../layout/css/team.css";
 
 const Team = () => {
   return (
@@ -29,7 +29,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/croppedjoe.jpg")}
+                src="https://i.imgur.com/4NiuWPe.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -45,7 +45,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/croppedjeremiah.jpg")}
+                src="https://i.imgur.com/uHFUd1g.jpg"
                 alt="Second slide"
               />
               <MDBMask overlay="black-light" />
@@ -59,7 +59,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/hunter.jpg")}
+                src="https://i.imgur.com/oUIFQr9.jpg"
                 alt="Third slide"
               />
               <MDBMask overlay="black-light" />
@@ -73,7 +73,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/lucas.jpg")}
+                src="https://i.imgur.com/0ZltSzy.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -87,7 +87,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/ben.jpg")}
+                src="https://i.imgur.com/96IXUlI.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -101,7 +101,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/trevor.jpg")}
+                src="https://i.imgur.com/WZV9mtY.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -115,7 +115,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/logan.jpg")}
+                src="https://i.imgur.com/bVnVcPE.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -129,7 +129,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/ryder.jpg")}
+                src="https://i.imgur.com/4iu05Sa.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -143,7 +143,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/grant.jpg")}
+                src="https://i.imgur.com/nq3HDQg.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -157,7 +157,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require('../images/individual-photos/alex.jpg')}
+                src="https://i.imgur.com/838T3ae.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -171,7 +171,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/scott.jpg")}
+                src="https://i.imgur.com/HrXW3hY.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -185,7 +185,7 @@ const Team = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={require("../images/individual-photos/chalyne.jpg")}
+                src="https://i.imgur.com/4B3DXng.jpg"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />

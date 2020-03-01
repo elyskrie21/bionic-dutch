@@ -11,7 +11,7 @@ import {
   MDBContainer
 } from "mdbreact";
 import Link from "next/link";
-import "../css/team.css";
+import "../layout/css/team.css";
 
 function Sponsors() {
   return (
@@ -21,7 +21,7 @@ function Sponsors() {
       </h2>
       <MDBRow>
         <MDBCol>
-          <MDBCard wide className="sponsor-card z-depth-2">
+          <MDBCard wide className="sponsor-card m-2">
             <MDBCardImage
               cascade
               className="img-fluid my-5"
@@ -52,7 +52,7 @@ function Sponsors() {
           </MDBCard>
         </MDBCol>
         <MDBCol>
-          <MDBCard wide className="sponsor-card z-depth-2">
+          <MDBCard wide className="sponsor-card m-2">
             <MDBCardImage
               cascade
               className="img-fluid my-5"

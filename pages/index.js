@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/layout/layout";
 import Intro from "../components/Home/intro";
 import Team from "../components/Home/team";
 import Statements from "../components/Home/Statements";
