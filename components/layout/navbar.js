@@ -39,7 +39,7 @@ class NavbarPage extends Component {
               </Link>
             </MDBNavItem>
             <MDBNavItem>
-              <Link href="/">
+              <Link href="/shop">
                 <a className="nav-link">Store</a>
               </Link>
             </MDBNavItem>

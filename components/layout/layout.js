@@ -18,6 +18,5 @@ const Layout = props => {
   );
 };
 
-Layout.com;
 
 export default Layout;
