@@ -34,7 +34,7 @@ class NavbarPage extends Component {
               </Link>
             </MDBNavItem>
             <MDBNavItem>
-              <Link href="/">
+              <Link href="/sponsors">
                 <a className="nav-link">Sponsors</a>
               </Link>
             </MDBNavItem>
