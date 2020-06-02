@@ -16,11 +16,7 @@ nextApp
     const app = express();
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(bodyParser.json());
-
-    app.get("/my-custom-route", (req, res) => {
-      res.status(200).json({ hello: "Hello, from the back-end world!" });
-    });
-
+    
     app.post("/send-email", (req, res) => {
       res.status(200).json({ hello: "Message was received!" });
       var name = req.body.name;

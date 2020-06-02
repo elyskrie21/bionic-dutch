@@ -1,82 +1,79 @@
 import React from "react";
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardImage,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardFooter,
-  MDBIcon,
-  MDBTooltip,
-  MDBBtn
-} from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+
+import Product from "./product";
 
 const Store = () => {
   return (
-    <MDBCard className="m-2" style={{ width: "22rem" }} cascade ecommerce wide>
-      <MDBCardImage
-        cascade
-        top
-        src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).jpg"
-        waves
-      />
-      <MDBCardBody cascade className="text-center">
-        <MDBCardTitle tag="h5">Shoes</MDBCardTitle>
-        <MDBCardTitle>
-          <a href="#!">
-            <strong>Product name</strong>
-          </a>
-        </MDBCardTitle>
-        <MDBCardText>
-          Temporibus autem quibusdam et aut officiis debitis aut rerum
-          necessitatibus saepe eveniet ut et voluptates. Temporibus autem
-          quibusdam. Lorem Ipsum dolor ament.
-        </MDBCardText>
-        <MDBCardFooter>
-          <span className="float-left">49$</span>
-          <span className="float-right">
-            <MDBTooltip placement="top">
-              <MDBBtn
-                tag="a"
-                color="transparent"
-                size="lg"
-                className="p-1 m-0 mr-2 z-depth-0"
-              >
-                <MDBIcon icon="shopping-cart" />
-              </MDBBtn>
-              <div>Add to Cart</div>
-            </MDBTooltip>
-            <MDBTooltip placement="top">
-              <MDBBtn
-                tag="a"
-                href="https://mdbootstrap.com"
-                target="_blank"
-                color="transparent"
-                size="lg"
-                className="p-1 m-0 mr-2 z-depth-0"
-              >
-                <MDBIcon icon="share-alt" />
-              </MDBBtn>
-              <div>Share</div>
-            </MDBTooltip>
-            <MDBTooltip placement="top">
-              <MDBBtn
-                tag="a"
-                color="transparent"
-                size="lg"
-                className="p-1 m-0 z-depth-0"
-              >
-                <MDBIcon icon="heart" className="red-text" />
-              </MDBBtn>
-              <div>Added to Wishlist</div>
-            </MDBTooltip>
-          </span>
-        </MDBCardFooter>
-      </MDBCardBody>
-    </MDBCard>
+    <div>
+      <section className="success-color-dark pb-3 mb-3">
+        <h2 className="h1-responsive font-weight-bold text-center pt-5">
+          Our Merchandise
+        </h2>
+        <p className="text-center w-responsive mx-auto">
+          All proceeds will go to support the Pella Bionic Dutch
+        </p>
+      </section>
+      <MDBContainer>
+        <MDBRow>
+          <MDBCol lg="4" md="6" className="mb-4">
+            <Product
+              category="shoe"
+              productName="Hat"
+              description="This is a test"
+              image="https://images.pexels.com/photos/67603/pexels-photo-67603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            ></Product>
+          </MDBCol>
+
+          <MDBCol lg="4" md="6" className="mb-4">
+            <Product
+              category="shoe"
+              productName="Shirt"
+              description="This is a test"
+              image="https://cdn.stocksnap.io/img-thumbs/960w/O6FFZNFK7X.jpg"
+            ></Product>
+          </MDBCol>
+
+          <MDBCol lg="4" md="6" className="mb-4">
+            <Product
+              category="shoe"
+              productName="Keychain"
+              description="This is a test"
+              image="https://images.pexels.com/photos/1194036/pexels-photo-1194036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            ></Product>
+          </MDBCol>
+        </MDBRow>
+
+        <MDBRow>
+          <MDBCol lg="4" md="6" className="mb-4">
+            <Product
+              category="shoe"
+              productName="Pins"
+              description="This is a test"
+              image="https://images.pexels.com/photos/632656/pexels-photo-632656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            ></Product>
+          </MDBCol>
+
+          <MDBCol lg="4" md="6" className="mb-4">
+            <Product
+              category="shoe"
+              productName="Cool sweatshirt"
+              description="This is a test"
+              image="https://images.pexels.com/photos/1480693/pexels-photo-1480693.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            ></Product>
+          </MDBCol>
+
+          <MDBCol lg="4" md="6" className="mb-4">
+            <Product
+              category="shoe"
+              productName="Bag"
+              description="This is a test"
+              image="https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            ></Product>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+    </div>
   );
 };
 
