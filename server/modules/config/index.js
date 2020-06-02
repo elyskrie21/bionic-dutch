@@ -4,6 +4,7 @@ const accessToken = '4/xAHaRmFqAOHPi0UzIWYxj-5optcZFSgFNK4Fp0gEiNR4JF2KCb5EYsjOi
 const clientId = '580503745452-s7tfgpl8fgi30g8td75fl08es14conhn.apps.googleusercontent.com'
 const clientSecret = '9m3194qT-DQfRKHsDizmtKCc'
 
+//These are for test purposes only
 export default {
   user,
   clientId,
