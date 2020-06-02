@@ -6,7 +6,7 @@ var transport = {
   secure: true,
   auth: {
     user: "esamkriegel@gmail.com",
-    pass: "ill77mon"
+    pass: process.env.PASS
   }
 };
 
