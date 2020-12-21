@@ -30,7 +30,7 @@ nextApp
 
       var mail = {
         from: name,
-        to: "esamkriegel@gmail.com", //Change to email address that you want to receive messages on
+        to: "MY_EMAIL", //Change to email address that you want to receive messages on
         subject: "New Message from Contact Form",
         text: content
       };
