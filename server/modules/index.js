@@ -5,7 +5,7 @@ var transport = {
   port: 465,
   secure: true,
   auth: {
-    user: "esamkriegel@gmail.com",
+    user: "MY_USER",
     pass: process.env.PASS
   }
 };
